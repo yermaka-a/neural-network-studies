@@ -1,4 +1,5 @@
 ### catalogue of neural networks exercises on python 
 
 - [x] first
-- [x] es_1
+- [x] ex_1
+- [x] ex_2

@@ -18,8 +18,11 @@ def go(color, shape, taste):
     act_val = np.array([act(x) for x in hidden_val])
     print(f"Values of act_fn of hidden layer: {act_val}")
     
-    out = np.dot(act_val, out_w)
-    print(f"Out values: {out}")
+    out_val = np.dot(act_val, out_w)
+    
+    print(f"Out values: {out_val}")
+    out = act(out_val)
+    print(f"out after activation_fn: {out}")
     return out
 
 
